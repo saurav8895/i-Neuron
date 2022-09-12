@@ -1,14 +1,16 @@
 #include<stdio.h>
 
-int sum(int n){
-    if(n==1)
-    return 1;
-    else
-    return n+sum(n-1);
+void print(int i,int n){
+    if(i<=n)
+   {
+     print(i,n-1);
+    printf("%d\n",n);
+    }
+
 }
 int main()
 {
     int n=10;
-   printf("%d",sum(n));
+  print(1,n);
     return 0;
 }
