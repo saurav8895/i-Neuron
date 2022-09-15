@@ -1,5 +1,5 @@
 #include<stdio.h>
-int * sort(int a[],int len){
+int * sort(int *a,int len){
     int temp;
     for (int i = 1; i < len; i++)
     {
@@ -29,11 +29,10 @@ int main()
         /* code */
     }
     int *p=sort(a,n);
-    for (int i = 0; i < n; i++)
+     for (int i = 0; i < n; i++)
     {
-        printf("%d\n",p[i]);
+        scanf("%d",p[i]);
         /* code */
     }
-    
     return 0;
 }
